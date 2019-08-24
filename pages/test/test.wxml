@@ -1,0 +1,21 @@
+<view class="div1" id="number-{{div2}}">div</view>
+<text>span   {{message}}</text>
+<text wx:if="{{condition}}">2333</text>
+<text wx:if="{{!condition}}">2443</text>
+<text wx:else>24</text>
+<text hidden="{{!condition}}">我的hidden是隐藏的</text>
+<view wx:for="{{arr}}" wx:for-index="xx" wx:for-item="xxx"  wx:key="xxx.id">
+index:{{xx}}  id:{{xxx.id}}  text：{{xxx.text}}
+</view>
+-----------------
+<view>{{str}}</view>
+<button bindtap="reverseStr">我是一个按钮</button>
+---------------
+<view wx:for="{{arr1}}" wx:for-index="index" wx:for-item="item">{{index}}.{{item}}</view>
+<button bindtap="pushItem">我是一个按钮</button>
+--------------------
+<view>{{obj.id}}:{{obj.text}}</view>
+<button bindtap="changeObjText">我是一个按钮</button>
+------------------
+<view class="{{xx ?'active':''}}">我会改变颜色</view>
+<button bindtap="changeColor">我是一个按钮</button>
