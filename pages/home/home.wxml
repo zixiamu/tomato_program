@@ -1,0 +1,5 @@
+<g-button text="创建任务" size="mini"   type="change"></g-button>
+<g-clock text="点击开始闹钟"></g-clock>
+<g-confirm visible="{{visible}}" placeholder="我完成了什么？"
+bindconfirm="confirm"
+bindcancel="cancel"></g-confirm>
