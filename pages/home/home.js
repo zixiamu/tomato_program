@@ -5,14 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-    visible:true,
+    lists:[
+      {id:1,text:'今天我干了什么',finished:true},
+      { id: 1, text: '今天我干了什么', finished: true },
+      { id: 1, text: '今天我干了什么', finished: true },
+      { id: 1, text: '今天我干了什么', finished: false },
+      { id: 1, text: '今天我干了什么', finished: false },
+      { id: 1, text: '今天我干了什么', finished: false },
+      { id: 1, text: '今天我干了什么', finished: false },
+      { id: 1, text: '今天我干了什么', finished: false },
+    ],
+    visible:false,
     
   },
-  confirm(event) {
-    console.log(event.detail)
+  confirmCreate(event) {
+    let content = event.detail
+    if(content){
+      
+      let todo = [{id: this.data.lists.length+1,text: content,finished: false}]
+      this.data.lists = todo.concat(this.data.lists)
+      this.setData({ lists: this.data.lists })
+      this.cancel()
+    }
+   
   },
-  cancel(event) {
+  destroytodo(event){
+    let index = event.currentTarget.dataset.index
+    
+    this.data.lists[index].finished = true
+    this.setData({lists:this.data.lists})
+  },
+  cancel() {
     this.setData({visible:false})
+  },
+  showConfirm(){
+    this.setData({visible:true})
   },
   /**
    * 生命周期函数--监听页面加载

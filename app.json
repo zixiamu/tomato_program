@@ -9,17 +9,17 @@
     "navigationBarTitleText": "番茄闹钟",
     "navigationBarTextStyle": "black"
   },
-  "tabBar":{
-    "color":"#515151",
-    "selectedColor":"#F6705A",
-    "backgroundColor":"#fff",
-    "borderStyle":"black",
-    "list":[
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#F6705A",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
       {
-        "pagePath":"pages/home/home",
-        "text":"专注",
-        "iconPath":"images/home.png",
-        "selectedIconPath":"images/home-active.png"
+        "pagePath": "pages/home/home",
+        "text": "专注",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
       },
       {
         "pagePath": "pages/home/home",
@@ -34,5 +34,6 @@
         "selectedIconPath": "images/me-active.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap92.json"
 }
