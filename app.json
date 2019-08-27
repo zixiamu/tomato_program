@@ -1,7 +1,12 @@
 {
   "pages": [
+    "pages/binding/binding",
+    "pages/login/login",
+    
     "pages/home/home",
-    "pages/test/test"
+    "pages/tomato/tomato",
+    "pages/me/me"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,7 +33,7 @@
         "selectedIconPath": "images/total-active.png"
       },
       {
-        "pagePath": "pages/test/test",
+        "pagePath": "pages/me/me",
         "text": "我的",
         "iconPath": "images/me.png",
         "selectedIconPath": "images/me-active.png"
